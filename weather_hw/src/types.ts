@@ -14,6 +14,12 @@ interface Wind {
     speed: number;
 }
 
+
+export interface CityData {
+    id: number;
+    city: string;
+}
+
 export interface WeatherData {
     id: number;
     city: string;
