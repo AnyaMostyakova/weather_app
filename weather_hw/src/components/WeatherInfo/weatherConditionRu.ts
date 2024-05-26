@@ -7,6 +7,7 @@ const weatherConditionsRu: { [key: string]: string } = {
     rain: 'дождь',
     'thunderstorm': 'гроза',
     snow: 'снег',
+    'light rain': 'небольшой дождь',
     mist: 'туман',
 };
 
