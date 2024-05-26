@@ -5,7 +5,6 @@ import Button from './components/SearchButton/Button';
 import WeatherCard from './components/WeatherInfo/WeatherCard';
 import useCities from './hooks/useCities';
 import useWeather from './hooks/useWeather';
-import { WeatherData } from './types';
 
 function App() {
     const [city, setCity] = useState<string>('');
@@ -32,11 +31,11 @@ function App() {
                 <Button onClick={handleSearch}>Поиск</Button>
             </div>
             <ul>
-                {cityOptions.map((city: WeatherData) => (
+                {cityOptions.map((city) => (
                     <li key={city.id}>{city.city}</li>
                 ))}
             </ul>
-            {weatherData && <WeatherCard city={weatherData.city} weatherData={weatherData} />}
+            {weatherData && <WeatherCard city={weatherData.city} weatherData={weatherData}/>}
         </div>
     );
 }
